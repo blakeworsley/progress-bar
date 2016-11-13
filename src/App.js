@@ -24,7 +24,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <div>
+        {/* <div>
         <ProgressBar
           {...this.state}
         />
@@ -79,8 +79,8 @@ class App extends Component {
             onChange={e => this.setState({ width: parseInt(e.target.value) })}
           />
         </div>
-      </div>
-      <div className="Bar-Graph">
+      </div> */}
+      {/* <div className="Bar-Graph">
         <StackedBarGraph>
          { data.toArray().map((d, i) => <DataPoint value={d} key={i} />) }
         </StackedBarGraph>
@@ -94,12 +94,12 @@ class App extends Component {
              />
            )) }
         </div>
-      </div>
+      </div> */}
       <div className="Bar-Graph">
         <BarGraph>
          { data2.toArray().map((d, i) => <DataPoint value={d} key={i} />) }
         </BarGraph>
-         <div className="inputs">
+         {/* <div className="inputs">
            { data2.toArray().map((d, i) => (
              <input
                type="number"
@@ -108,7 +108,7 @@ class App extends Component {
                onChange={e => this.setState({ data2: data2.set(i, +e.target.value) })}
              />
            )) }
-        </div>
+        </div> */}
       </div>
       </div>
     );
